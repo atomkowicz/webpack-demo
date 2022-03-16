@@ -1,4 +1,4 @@
-import styles from './App.css';
+import styles from './App.module.css';
 
 import React, { Component } from 'react';
 
@@ -8,6 +8,8 @@ import GlobalSelectorsDemo from './2-GlobalSelectors/GlobalSelectorsDemo';
 import ClassCompositionDemo from './3-ClassComposition/ClassCompositionDemo';
 import CompositionOverridesDemo from './4-CompositionOverrides/CompositionOverridesDemo';
 import ScopedAnimationsDemo from './5-ScopedAnimations/ScopedAnimationsDemo';
+import ButtonsDemo from './6-Buttons/ButtonsDemo';
+import ThemesDemo from './7-Themes/ThemesDemo';
 
 export default class App extends Component {
 
@@ -53,6 +55,17 @@ export default class App extends Component {
         <p>The animation's keyframes are private to the animations module, only exposed publicly via a class which this component inherits from.</p>
         <ScopedAnimationsDemo />
 
+        <hr className={styles.hr} />
+
+        <h2>Buttons</h2>
+        <p></p>
+        <ButtonsDemo />
+        
+        <hr className={styles.hr} />
+
+        <h2>Themes</h2>
+        <p></p>
+        <ThemesDemo />
       </div>
     );
   }
